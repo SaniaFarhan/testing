@@ -45,13 +45,7 @@ Partial Class Form1
         Label2 = New Label()
         chkShowPass = New CheckBox()
         btnImage = New Button()
-        txtFull = New TextBox()
-        cmbFname = New ComboBox()
-        cmbLname = New ComboBox()
-        cmbAddress = New ComboBox()
         cmbUser = New ComboBox()
-        cmbPass = New ComboBox()
-        cmbPhoto = New ComboBox()
         FlowLayoutPanel1 = New FlowLayoutPanel()
         btnUpdate = New Button()
         btnDelete = New Button()
@@ -159,7 +153,7 @@ Partial Class Form1
         ' 
         ' date_birth
         ' 
-        date_birth.CalendarFont = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        date_birth.CalendarFont = New Font("Tahoma", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         date_birth.CustomFormat = "yyyy-MM-dd"
         date_birth.Format = DateTimePickerFormat.Custom
         date_birth.Location = New Point(191, 288)
@@ -226,7 +220,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Tahoma", 24F)
+        Label1.Font = New Font("Tahoma", 24.0F)
         Label1.Location = New Point(255, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(176, 39)
@@ -276,78 +270,15 @@ Partial Class Form1
         btnImage.Text = "Select Image File"
         btnImage.UseVisualStyleBackColor = True
         ' 
-        ' txtFull
-        ' 
-        txtFull.Location = New Point(390, 723)
-        txtFull.Name = "txtFull"
-        txtFull.Size = New Size(285, 23)
-        txtFull.TabIndex = 22
-        txtFull.Visible = False
-        ' 
-        ' cmbFname
-        ' 
-        cmbFname.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        cmbFname.FormattingEnabled = True
-        cmbFname.Location = New Point(99, 662)
-        cmbFname.Name = "cmbFname"
-        cmbFname.Size = New Size(285, 22)
-        cmbFname.TabIndex = 23
-        cmbFname.Text = "Select First Name"
-        cmbFname.Visible = False
-        ' 
-        ' cmbLname
-        ' 
-        cmbLname.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        cmbLname.FormattingEnabled = True
-        cmbLname.Location = New Point(99, 694)
-        cmbLname.Name = "cmbLname"
-        cmbLname.Size = New Size(285, 22)
-        cmbLname.TabIndex = 24
-        cmbLname.Text = "Select Last Name"
-        cmbLname.Visible = False
-        ' 
-        ' cmbAddress
-        ' 
-        cmbAddress.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        cmbAddress.FormattingEnabled = True
-        cmbAddress.Location = New Point(99, 724)
-        cmbAddress.Name = "cmbAddress"
-        cmbAddress.Size = New Size(285, 22)
-        cmbAddress.TabIndex = 25
-        cmbAddress.Text = "Select Address"
-        cmbAddress.Visible = False
-        ' 
         ' cmbUser
         ' 
-        cmbUser.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cmbUser.Font = New Font("Tahoma", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cmbUser.FormattingEnabled = True
         cmbUser.Location = New Point(191, 52)
         cmbUser.Name = "cmbUser"
         cmbUser.Size = New Size(285, 22)
         cmbUser.TabIndex = 28
         cmbUser.Text = "Select username"
-        ' 
-        ' cmbPass
-        ' 
-        cmbPass.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        cmbPass.FormattingEnabled = True
-        cmbPass.Location = New Point(390, 664)
-        cmbPass.Name = "cmbPass"
-        cmbPass.Size = New Size(285, 22)
-        cmbPass.TabIndex = 29
-        cmbPass.Text = "Select password"
-        cmbPass.Visible = False
-        ' 
-        ' cmbPhoto
-        ' 
-        cmbPhoto.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        cmbPhoto.FormattingEnabled = True
-        cmbPhoto.Location = New Point(390, 694)
-        cmbPhoto.Name = "cmbPhoto"
-        cmbPhoto.Size = New Size(285, 22)
-        cmbPhoto.TabIndex = 30
-        cmbPhoto.Text = "Select file path"
-        cmbPhoto.Visible = False
         ' 
         ' FlowLayoutPanel1
         ' 
@@ -398,18 +329,12 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(677, 749)
         Controls.Add(FlowLayoutPanel1)
-        Controls.Add(cmbPhoto)
-        Controls.Add(cmbPass)
         Controls.Add(cmbUser)
         Controls.Add(DataGrid1)
-        Controls.Add(cmbAddress)
-        Controls.Add(cmbLname)
-        Controls.Add(cmbFname)
-        Controls.Add(txtFull)
         Controls.Add(btnImage)
         Controls.Add(chkShowPass)
         Controls.Add(txtImage)
@@ -467,13 +392,7 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents chkShowPass As CheckBox
     Friend WithEvents btnImage As Button
-    Friend WithEvents txtFull As TextBox
-    Friend WithEvents cmbFname As ComboBox
-    Friend WithEvents cmbLname As ComboBox
-    Friend WithEvents cmbAddress As ComboBox
     Friend WithEvents cmbUser As ComboBox
-    Friend WithEvents cmbPass As ComboBox
-    Friend WithEvents cmbPhoto As ComboBox
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents btnReset As Button
     Friend WithEvents btnDelete As Button
