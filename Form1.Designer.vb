@@ -51,6 +51,7 @@ Partial Class Form1
         btnDelete = New Button()
         btnReset = New Button()
         DataGrid1 = New DataGridView()
+        testing = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         FlowLayoutPanel1.SuspendLayout()
         CType(DataGrid1, ComponentModel.ISupportInitialize).BeginInit()
@@ -153,7 +154,7 @@ Partial Class Form1
         ' 
         ' date_birth
         ' 
-        date_birth.CalendarFont = New Font("Tahoma", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        date_birth.CalendarFont = New Font("Tahoma", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         date_birth.CustomFormat = "yyyy-MM-dd"
         date_birth.Format = DateTimePickerFormat.Custom
         date_birth.Location = New Point(191, 288)
@@ -220,7 +221,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Tahoma", 24.0F)
+        Label1.Font = New Font("Tahoma", 24F)
         Label1.Location = New Point(255, 0)
         Label1.Name = "Label1"
         Label1.Size = New Size(176, 39)
@@ -272,7 +273,7 @@ Partial Class Form1
         ' 
         ' cmbUser
         ' 
-        cmbUser.Font = New Font("Tahoma", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        cmbUser.Font = New Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         cmbUser.FormattingEnabled = True
         cmbUser.Location = New Point(191, 52)
         cmbUser.Name = "cmbUser"
@@ -327,11 +328,21 @@ Partial Class Form1
         DataGrid1.Size = New Size(601, 209)
         DataGrid1.TabIndex = 3
         ' 
+        ' testing
+        ' 
+        testing.Location = New Point(541, 170)
+        testing.Name = "testing"
+        testing.Size = New Size(75, 23)
+        testing.TabIndex = 34
+        testing.Text = "testing"
+        testing.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(677, 749)
+        Controls.Add(testing)
         Controls.Add(FlowLayoutPanel1)
         Controls.Add(cmbUser)
         Controls.Add(DataGrid1)
@@ -398,5 +409,6 @@ Partial Class Form1
     Friend WithEvents btnDelete As Button
     Friend WithEvents btnUpdate As Button
     Friend WithEvents DataGrid1 As DataGridView
+    Friend WithEvents testing As Button
 
 End Class

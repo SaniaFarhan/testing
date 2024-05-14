@@ -44,12 +44,9 @@ Public Class Form1
             myConn.Open()
             Dim reader As SqlDataReader = cmd.ExecuteReader()
             While reader.Read()
-                cmbFname.Items.Add(reader("fname").ToString())
-                cmbLname.Items.Add(reader("lname").ToString())
-                cmbAddress.Items.Add(reader("address").ToString())
+
                 cmbUser.Items.Add(reader("username").ToString())
-                cmbPass.Items.Add(reader("password").ToString())
-                cmbPhoto.Items.Add(reader("photo").ToString())
+
             End While
             reader.Close()
         End Using
@@ -98,10 +95,6 @@ Public Class Form1
         End Try
     End Sub
 
-    '----- MIRROR DATA -----
-    Private Sub txtFName_KeyUp(sender As Object, e As KeyEventArgs) Handles txtFName.KeyUp
-        txtFull.Text = txtFName.Text & " " & txtLName.Text
-    End Sub
 
     '----- FOR HIDDEN PASSWORD -----
     Private Sub chkShowPass_CheckedChanged(sender As Object, e As EventArgs) Handles chkShowPass.CheckedChanged
@@ -245,5 +238,9 @@ Public Class Form1
         End Try
     End Sub
 
+    Private Sub testing_Click(sender As Object, e As EventArgs) Handles testing.Click
 
+        TestForm.Show()
+
+    End Sub
 End Class
