@@ -23,11 +23,11 @@ Partial Class TestForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         GroupBox1 = New GroupBox()
+        Button1 = New Button()
         CheckBox4 = New CheckBox()
         CheckBox3 = New CheckBox()
         CheckBox2 = New CheckBox()
         CheckBox1 = New CheckBox()
-        Button1 = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -44,6 +44,15 @@ Partial Class TestForm
         GroupBox1.TabIndex = 0
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(184, 178)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 4
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
         ' 
         ' CheckBox4
         ' 
@@ -84,15 +93,6 @@ Partial Class TestForm
         CheckBox1.TabIndex = 0
         CheckBox1.Text = "CheckBox1"
         CheckBox1.UseVisualStyleBackColor = True
-        ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(184, 178)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
-        Button1.TabIndex = 4
-        Button1.Text = "Button1"
-        Button1.UseVisualStyleBackColor = True
         ' 
         ' TestForm
         ' 
