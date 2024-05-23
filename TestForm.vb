@@ -8,10 +8,10 @@
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
-        MessageBox.Show("World")
+        MessageBox.Show("Change to this too w/ new settings")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MessageBox.Show("this is a new change")
+        MessageBox.Show("Final Changes")
     End Sub
 End Class
